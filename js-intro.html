@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Js intro</h1>
+  </body>
+
+  <script>
+    let hargaAwal = 20000
+    let diskon = 10
+
+    function getDiscount(normalPrice, percentage){
+      let result = normalPrice / percentage;
+      console.log("getDiscount: ",result); 
+
+      return result;
+    }
+
+    let resultDiscount = getDiscount(hargaAwal, diskon);
+    function hasildiskon(normalPrice, totalDiscount) {
+      let result = normalPrice - totalDiscount
+
+      console.log("hasildiskon: ", result);
+    }
+    hasildiskon (hargaAwal, resultDiscount)
+      
+  </script>
+</html>
